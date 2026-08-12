@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
     <main class="container">
@@ -23,25 +25,15 @@
 
                 <div class="campo">
                     <label for="nome">Nome</label>
-                    <input
-                        type="text"
-                        id="nome"
-                        name="nome"
-                        placeholder="Digite o nome"
-                    >
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome">
                 </div>
 
                 <div class="campo">
                     <label for="email">E-mail</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Digite o e-mail"
-                    >
+                    <input type="email" id="email" name="email" placeholder="Digite o e-mail">
                 </div>
 
-                <button type="submit">
+                <button type="button" id="cadastra-usuario">
                     Cadastrar usuário
                 </button>
 
@@ -52,17 +44,17 @@
 
             <div class="lista-header">
                 <h2>Usuários cadastrados</h2>
-                <span id="contador">0 usuários</span>
+                <!-- <span id="contador">0 usuários</span> -->
             </div>
 
             <ul id="lista-usuarios">
 
-                
+
                 <!-- Os usuários serão adicionados aqui pelo JavaScript.
 
                 Exemplo de um usuário: -->
 
-                <li class="usuario">
+                <!-- <li class="usuario">
                     <div>
                         <span class="label">Nome</span>
                         <strong>João Silva</strong>
@@ -72,8 +64,13 @@
                         <span class="label">E-mail</span>
                         <strong>joao@email.com</strong>
                     </div>
-                </li>
-               
+
+                    <button class="btn-excluir" type="button">
+                        Excluir
+                    </button>
+
+                </li> -->
+
 
             </ul>
 
@@ -81,5 +78,7 @@
 
     </main>
 
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
