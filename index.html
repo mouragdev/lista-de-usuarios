@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>Usuários</h1>
+            <p>Cadastre e visualize os usuários registrados.</p>
+        </header>
+
+        <section class="card cadastro">
+            <h2>Novo usuário</h2>
+
+            <form id="form-cadastro">
+
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite o nome"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite o e-mail"
+                    >
+                </div>
+
+                <button type="submit">
+                    Cadastrar usuário
+                </button>
+
+            </form>
+        </section>
+
+        <section class="card usuarios">
+
+            <div class="lista-header">
+                <h2>Usuários cadastrados</h2>
+                <span id="contador">0 usuários</span>
+            </div>
+
+            <ul id="lista-usuarios">
+
+                
+                <!-- Os usuários serão adicionados aqui pelo JavaScript.
+
+                Exemplo de um usuário: -->
+
+                <li class="usuario">
+                    <div>
+                        <span class="label">Nome</span>
+                        <strong>João Silva</strong>
+                    </div>
+
+                    <div>
+                        <span class="label">E-mail</span>
+                        <strong>joao@email.com</strong>
+                    </div>
+                </li>
+               
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
